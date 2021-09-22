@@ -1,0 +1,14 @@
+#H2
+datasources:
+  default:
+    url: jdbc:h2:mem:testeDB;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+
+#datasources:
+#  default:
+#    url: ${DB_URL:`jdbc:mysql://localhost:3306/carroGrpcTest?createDatabaseIfNotExist=TRUE&useTimezone=true&serverTimezone=America/Sao_Paulo`}
+#    driverClassName: com.mysql.cj.jdbc.Driver
+#    username: ${DB_USER:root}
+#    password: ${DB_PASSWORD:ot}
+#    dialect: org.hibernate.dialect.MySQL8Dialect
+

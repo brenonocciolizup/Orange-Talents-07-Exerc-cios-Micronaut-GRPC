@@ -1,0 +1,21 @@
+micronaut:
+  application:
+    name: carroGrpc
+datasources:
+  default:
+    url: ${DB_URL:`jdbc:mysql://localhost:3306/carroGrpc?createDatabaseIfNotExist=TRUE&useTimezone=true&serverTimezone=America/Sao_Paulo`}
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: ${DB_USER:root}
+    password: ${DB_PASSWORD:ot}
+    dialect: org.hibernate.dialect.MySQL8Dialect
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true
+
+jackson:
+  serialization:
+    writeDatesAsTimestamps=false:
